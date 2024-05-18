@@ -213,14 +213,14 @@ body {
 .about{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minimum width */
-    align-items: center;
+    align-items: start;
     gap:1.5rem;
     padding: 5% 10%; /* Adjusted padding for smaller screens */
 }
 .about-img img{
-    padding-bottom: 10%;
-    padding-left: 5%;
-    padding-top: 10%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-top: 0%;
     max-width: 100%; /* Ensuring images don't overflow parent container */
     height: auto;
     width: 100%;
@@ -233,16 +233,16 @@ body {
     color: #0ef;
 }
 .about-text h4 {
-    font-size: 29px;
+    font-size: 24px;
     font-weight: 600;
     color: #fff;
-    line-height: 1.7;
+    line-height: 1;
     margin: 15px 0 30px;
 }
 .about-text p{
     color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.1;
     margin-bottom: 4rem;
 }
 

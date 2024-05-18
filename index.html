@@ -339,11 +339,11 @@
             <h4>Let's work Together</h4>
             <p>If you have any questions, job opportunities, or if you just want to say hello, don't hesitate to reach out!</p>
             <div class="contact-list">
-                <i class='bx bxs-send'></i>snavinkumar.tvm@gmail.com</a>
+                <i class='bx bxs-send'></i>snavinkumar.tvm@gmail.com
                 <i class="bx bxs-phone"></i>9597462016
             </div>
             <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/navin-kumar-s-090597215/" style="--i:6"><i class='bx bxl-linkedin'></i>
+                <a href="https://www.linkedin.com/in/navin-kumar-s-090597215/" style="--i:6"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://x.com/NavinKu76652837?t" style="--i:7"><i class='bx bxl-twitter'></i></a>
                 <a href="https://wa.me/9597462016" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
             </div>
@@ -370,15 +370,16 @@
             const message = document.getElementById('message').value;
     
             const body = `Name: ${name}<br>Email: ${email}<br>Subject: ${subject}<br>Message: ${message}`;
-    
+            
             console.log("Attempting to send email...");
             Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "snavinkumar.tvm@gmail.com",
                 Password: "5FF0846169D1F0FEFF252C7385A6265A41B2",
                 To: 'snavinkumar.tvm@gmail.com',
-                From: email,
-                Subject: subject,
+                From: "snavinkumar.tvm@gmail.com",
+                ReplyTo: email,
+                Subject: subject || "Contact Form Submission",
                 Body: body,
                 Port: 2525 // Try 587 or 465 if 2525 doesn't work
             }).then(
@@ -398,6 +399,7 @@
             );
         });
     </script>
+    
     
     <script src="main.js"></script>
     <script>
